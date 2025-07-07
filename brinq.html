@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="description" content="Locação de brinquedos para festas em Bandeirante-PR. Cama elástica, tobogã, personagens infantis e muito mais!">
+<meta name="keywords" content="aluguel de brinquedos, cama elástica, festas infantis, tobogã, personagens para festas, Bruno Brinquedos">
+<meta name="author" content="Bruno Brinquedos">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta charset="UTF-8">
+  <title>Bruno Brinquedos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="logotipo-bruno.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 255, 255);
+      color: rgb(3, 3, 168);
+    }
+
+    .cabecalho {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #ffffff;
+    }
+
+    .logo {
+      width: 200px;
+      margin-top: -20px;
+    }
+
+    .slogan-box {
+      color: black;
+      text-align: right;
+      max-width: 70%;
+    }
+
+    .slogan {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      font-style: italic;
+      color: rgb(3, 3, 168);
+    }
+    .carrossel-contato-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.carrossel {
+  flex: 1 1 100px; 
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: passar 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+@keyframes passar {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+#contato {
+  flex: 1 1 250px; 
+  color: (3, 3, 168);
+}
+
+
+    nav {
+      background-color: rgb(3, 3, 168);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      color: rgb(3, 3, 168);
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 20px;
+    }
+
+    .produto {
+      background: rgb(3, 3, 168);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+    }
+
+    .produto img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slogan-box {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .carrossel-contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+ <header class="cabecalho">
+  <div class="logo-box">
+    <img src="logotipo-bruno.jpg" alt="Bruno Brinquedos" class="logo">
+
+     <div style="margin-top: 8px;">
+      <a href="https://www.instagram.com/brunobrinquedoss" target="_blank" style="color: rgb(3, 3, 168); text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 6px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram"
+          width="20"
+          height="20"
+          style="vertical-align: middle;">
+        @brunobrinquedoss
+      </a>
+    </div>
+  </div>
+
+  <div class="slogan-box">
+    <h2 class="slogan">Pensou em Diversão! Pense em Bruno Brinquedos!</h2>
+    <h2 class="slogan">Locação de brinquedos para festas e eventos.</h2>
+    <h2 class="slogan">E além dos brinquedos, temos personagens incríveis para encantar os pequenos!</h2>
+  </div>
+</header>
+
+   
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="2.21 .jpg" alt="Cama Elástica" />
+          <h3>Cama Elástica Pequena</h3>
+          <p>Medida: 2,20m</p>
+        </div>
+
+        <div class="produto">
+          <img src="2.80.jpg" alt="Cama Elástica" />
+          <h3>Cama Elástica Média</h3>
+          <p>Medida: 2,80m</p>
+        </div>
+
+        <div class="produto">
+          <img src="4,00.jpg" alt="Cama Elástica" />
+          <h3>Cama Elástica Grande</h3>
+          <p>Medida: 4,00m</p>
+        </div>
+       
+        <div class="produto">
+          <img src="ps-grande.jpg" alt="Piscina de Bolinha" />
+          <h3>Piscina de Bolinha Grande</h3>
+        </div>
+        
+        <div class="produto">
+          <img src="tombo-mikey.jpg" alt="Tombo Legal Mickey Mouse" />
+          <h3>Tombo Legal Mickey Mouse</h3>
+        </div>
+
+      <div class="produto">
+  <img src="frajola.jpg" alt="Tobogã Frajola" />
+  <h3>Tobogã Frajola</h3>
+</div>
+
+<div class="produto">
+  <img src="tigre.jpg" alt="Tobogã Tigre" />
+  <h3>Tobogã Tigre</h3>
+</div>
+
+<div class="produto">
+  <img src="futebol-sabao1.jpg" alt="Futebol de Sabão" />
+  <h3>Futebol de Sabão</h3>
+</div>
+
+<div class="produto">
+  <img src="homem-aranha.jpg" alt="Personagem Homem Aranha" />
+  <h3>Personagem Homem Aranha</h3>
+</div>
+
+<div class="produto">
+  <img src="stith.jpg" alt=" Personagem Stitch" />
+  <h3>Personagem Stitch</h3>
+</div>
+
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top: 40px;">
+      <h2>Sobre a Bruno Brinquedos</h2>
+      <p style="color: #000000;">Somos uma empresa especializada em locação de brinquedos.
+        Aluguel de brinquedos com qualidade, segurança e alegria garantida 🎈🎈🎈!</p>
+      <p style="color: #000000;">Para ter acesso ao nosso catálogo completo e para mais informações, entre em contato! ☺️</p>
+      <p style="color: #000000;">💖 Siga nosso Instagram e veja como podemos tornar sua festa inesquecível!🥳</p>
+      <p>👇👇👇👇👇👇👇👇</p>
+            
+     <a href="https://www.instagram.com/brunobrinquedoss" target="_blank" style="color: rgb(0, 0, 0); text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+              width="24"
+              style="vertical-align: middle; margin-right: 6px;">
+            @brunobrinquedoss
+     </a>
+    </section>
+
+  <div class="carrossel-contato-container">
+    <section class="carrossel">
+      <div class="slides">
+        <img src="batman.jpg" alt="Personagem Batman">
+        <img src="tigre.jpg" alt="Tobogã Tigre">
+        <img src="algodao-doce.jpg" alt="Máquina de Algodão Doce">
+        <img src="pula-pula.jpg" alt="Pula pula">
+        <img src="piscina-escorrega.jpg" alt="Piscina escorrega">
+        <img src="tombo-legal.jpg" alt="Tombo legal">
+        <img src="logotipo-bruno.jpg" alt="logotipo">
+        
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top: 0;">
+      <h2>Contato</h2>
+      <div style="color: white; font-size: 0.95rem;">
+        <p>
+          <a href="https://wa.me/5543998459749?text=Olá,%20quero%20solicitar%20um%20orçamento%20para%20locação%20de%20brinquedos!" target="_blank" style="
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+">
+  📲 Solicitar Orçamento via WhatsApp
+     </a>
+      
+     <div style="height: 20px;"></div>
+     
+     <p style="color: #000000;">
+          <i class="fas fa-map-marker-alt" style="color: #000000; margin-right: 6px;"></i>
+          Atendemos em Bandeirantes/PR
+        </p>
+      </div>
+    </section>
+  </div>
+
+</main>
+<footer>
+  <p>© 2025 Bruno Brinquedos - Todos os direitos reservados.</p>
+  <p style="margin-top: 10px; font-size: 0.85rem;">
+    <a href="#" id="abrirPolitica" style="color: rgb(3, 3, 168); text-decoration: underline; cursor: pointer;">Política de Privacidade</a> | 
+    <a href="#" id="abrirTermos" style="color: rgb(3, 3, 168); text-decoration: underline; cursor: pointer;">Termos de Uso</a>
+  </p>
+</footer>
+
+<div id="modalPolitica" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" id="fecharPolitica">&times;</span>
+    <h2>Política de Privacidade</h2>
+    <p>Na Bruno Brinquedos, respeitamos a sua privacidade e estamos comprometidos em proteger suas informações pessoais. Coletamos apenas os dados necessários para oferecer um serviço de qualidade, como nome, telefone e e-mail, exclusivamente para contato e orçamento.</p>
+    <p>Não compartilhamos suas informações com terceiros sem sua autorização expressa. Utilizamos medidas de segurança para garantir a proteção dos seus dados contra acessos não autorizados.</p>
+    <p>Você pode solicitar a qualquer momento a atualização ou exclusão dos seus dados cadastrados conosco.</p>
+    <p>Ao utilizar nosso site, você concorda com esta política de privacidade.</p>
+  </div>
+</div>
+
+<div id="modalTermos" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" id="fecharTermos">&times;</span>
+    <h2>Termos de Uso</h2>
+    <p>O uso do site Bruno Brinquedos está sujeito aos seguintes termos:</p>
+    <ul>
+      <li>Este site tem finalidade exclusiva de divulgação dos nossos serviços e produtos de locação de brinquedos.</li>
+      <li>As informações disponibilizadas são de caráter informativo e podem ser atualizadas a qualquer momento sem aviso prévio.</li>
+      <li>Ao solicitar orçamento via WhatsApp ou contato, você concorda em fornecer dados verdadeiros e autorizados para comunicação.</li>
+      <li>Não nos responsabilizamos por eventuais danos causados pelo uso indevido dos brinquedos alugados, sendo responsabilidade do contratante garantir a segurança durante o uso.</li>
+    </ul>
+    <p>Ao navegar e utilizar este site, você aceita estes termos de uso.</p>
+  </div>
+</div>
+
+<style>
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+  }
+
+  .modal-conteudo {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+
+  const abrirPolitica = document.getElementById('abrirPolitica');
+  const modalPolitica = document.getElementById('modalPolitica');
+  const fecharPolitica = document.getElementById('fecharPolitica');
+
+  abrirPolitica.onclick = function(e) {
+    e.preventDefault();
+    modalPolitica.style.display = 'block';
+  }
+  fecharPolitica.onclick = function() {
+    modalPolitica.style.display = 'none';
+  }
+
+  const abrirTermos = document.getElementById('abrirTermos');
+  const modalTermos = document.getElementById('modalTermos');
+  const fecharTermos = document.getElementById('fecharTermos');
+
+  abrirTermos.onclick = function(e) {
+    e.preventDefault();
+    modalTermos.style.display = 'block';
+  }
+  fecharTermos.onclick = function() {
+    modalTermos.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modalPolitica) {
+      modalPolitica.style.display = 'none';
+    }
+    if (event.target == modalTermos) {
+      modalTermos.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
