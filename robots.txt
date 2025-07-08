@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brunobrinquedos.netlify.app/sitemap.xml
